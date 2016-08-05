@@ -6,10 +6,20 @@ namespace Amdy;
  * User: tanyunbao
  * Date: 2016/8/5
  * Time: 9:43
+ * function:以下是常用的排序算法
  */
 class Sortalgo
 {
-    /*快速排序*/
+    /*以下注释为自己的想法
+     *快速排序
+     *以第一个为基准：进行比较
+     *把大于的基准的放在 数组$right = []；
+     * 把小于的基准的放在 数组$left = [];
+     *通过递归实现
+     * $left  = $this->kuaiSu($arr);
+    $right = $this->kuaiSu($arr);
+    return array_merge($left, array($one), $right);
+     */
     public function kuaiSu($arr)
     {
         $count = count($arr);
@@ -29,7 +39,11 @@ class Sortalgo
         $right = $this->kuaiSu($arr);
         return array_merge($left, array($one), $right);
     }
-    /*插入排序*/
+    /*插入排序
+     *以第二个基准；
+     *分别以基准前面的数进行比较
+
+     */
     public function inSert($arr)
     {
         $count = count($arr);
@@ -46,7 +60,10 @@ class Sortalgo
         }
         return $arr;
     }
-    /*冒泡排序*/
+    /*冒泡排序
+     * 两个相邻的数字进行比较
+
+     */
     public function maoPao($arr)
     {
         $count = count($arr);
@@ -63,7 +80,11 @@ class Sortalgo
         }
         return $arr;
     }
-    /*选择排序*/
+    /*选择排序
+     *以第一个数为基准
+     * 每次以基准数字从待排数字中找出最小的数字
+     * 顺序放在已经排的的数据中
+     */
     public function choiceSort($arr)
     {
         $count = count($arr);
