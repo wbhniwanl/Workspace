@@ -107,7 +107,7 @@ class Stringpractice
         return $array1;
     }
     //实现截取20个汉字
-    public function substrgb($str)
+    public function subStrgb($str)
     {
         $shuJu = '';
         $shuJu = substr($str, 0, 60);

@@ -221,7 +221,7 @@ class Workone
         $arrTmp = array(); //
         $arrTwo = array();
         foreach ($arrOne as $value) {
-            $arrTmp[$value['fid']][] = array_slice($value, 1); //便利二维
+            $arrTmp[$value['fid']][] = array_slice($value, 1); //遍历二维
         }
         foreach ($arrTmp as $v) {
             $arrTwo[] = $v; //遍历一维
@@ -247,13 +247,26 @@ class Workone
     {
         $arrOne = array(
             0 => array('fid' => 1, 'tid' => 1, 'name' => 'xiaoming'),
-            1 => array('fid' => 1, 'tid' => 2, 'name' => 'zhangsan'),
+            1 => array('fid' => 5, 'tid' => 2, 'name' => 'zhangsan'),
             2 => array('fid' => 1, 'tid' => 5, 'name' => 'lisi'),
-            3 => array('fid' => 1, 'tid' => 7, 'name' => 'wangmu'),
+            3 => array('fid' => 7, 'tid' => 7, 'name' => 'wangmu'),
             4 => array('fid' => 3, 'tid' => 9, 'name' => 'liufen'),
         );
-        rsort($arrOne);
-// sort($arrOne);
+        foreach ($arrOne as $key => $value) {
+            $fid[$key] = $value['fid'];
+            $tid[$key] = $value['tid'];
+        }
+        array_multisort($tid, SORT_ASC, SORT_REGULAR, $fid, SORT_DESC, SORT_REGULAR, $arrOne);
+        //把相同的放在一起fid相等的放在一起
+        /*  $arrTmp = array();
+        $arrTwo = array();
+        foreach ($arrOne as $value) {
+        $arrTmp[$value['fid']][] = $value; //遍历二维
+        }
+        foreach ($arrTmp as $v) {
+        $arrTwo[] = $v;} //遍历一维
+        //降序
+        // sort($arrOne);//升序*/
         return $arrOne;
         //print_r($arrOne);
     }
