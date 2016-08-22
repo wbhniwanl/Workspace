@@ -40,4 +40,4 @@ $data = $test->query("select * from tp_conpany where id=1;");
 <?php include "left.php";?>
 
 	</div>
-<?php include "buttom,.html";?>
+<?php include "buttom.html";?>

@@ -1,11 +1,13 @@
-<?php include "nav.html";?>
+<?php
+include "nav.html";
+include "Pdo/testPdoBb.php"
+;?>
 <div class="content">
     <div class="lefter">
         <div class="title">
             <h2 class="cBlue fB">客户留言<b class="cGrey fn">Guestbook</b></h2>
         </div>
 <?php
-include "Pdo/testPdoBb.php";
 $one = $_POST['name'];
 $two = $_POST['content'];
 $arr = array('fullName' => "$one", 'msg' => "$two");
@@ -22,4 +24,4 @@ $test->insert('tp_message', $arr);
     </div>
     <?php include "left.php";?>
 </div>
-<?php include "buttom,.html";?>
+<?php include "buttom.html";?>

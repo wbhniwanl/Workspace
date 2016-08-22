@@ -1,4 +1,7 @@
-<?php include "nav.html";?>
+<?php
+include "nav.html";
+include "Pdo/testPdoBb.php";
+?>
 <div class="content">
 	<div class="w475_l">
             <div class="title">
@@ -7,7 +10,6 @@
 
         <div class="intro">
             <?php
-include "Pdo/testPdoBb.php";
 $data = $test->query("select * from tp_conpany order by id");
 foreach ($data as $arr) {
     ;?>
@@ -27,7 +29,6 @@ foreach ($data as $arr) {
 
             <?php
 $data = $test->query("select * from tp_produce order by id");
-
 foreach ($data as $arr) {
     ;?>
         	<li>
@@ -95,4 +96,4 @@ foreach ($data as $arr) {
 ?>
 </div>
 
-<?php include "buttom,.html";?>
+<?php include "buttom.html";?>

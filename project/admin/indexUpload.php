@@ -12,10 +12,7 @@
 header('Content-Type:text/html;charset=utf-8');
 ?>
 <div class="div1">
-<form  action="FileUpload.php" method="post" enctype="multipart/form-data" style="margin-left: 50px;">
-
-
-
+<form  action="fileUpload.php" method="post" enctype="multipart/form-data" style="margin-left: 50px;">
     <table class="opt" >
         <tbody>
         <tr>

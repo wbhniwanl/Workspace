@@ -1,4 +1,7 @@
-<?php include "nav.html";?>
+<?php
+include "nav.html";
+include "Pdo/testPdoBb.php"
+;?>
 <div class="content">
 	<div class="lefter">
     	<div class="title">
@@ -7,7 +10,6 @@
         <div class="intro" style="height:167px">
 
             <?php
-include "Pdo/testPdoBb.php";
 $data = $test->query("select * from tp_contact WHERE id=1;");
 foreach ($data as $arr) {
     ;?>
@@ -17,7 +19,6 @@ foreach ($data as $arr) {
             固定电话：<?php echo $arr['telephone']; ?><br />
             email：<?php echo $arr['email']; ?>          <?php }
 ;?>
-
         </div>
         <div class="title">
         	<h2 class="cBlue fB">我的位置<b class="cGrey fn">Map</b></h2>
@@ -29,4 +30,4 @@ foreach ($data as $arr) {
     <?php include "left.php";?>
 
 </div>
-<?php include "buttom,.html";?>
+<?php include "buttom.html";?>

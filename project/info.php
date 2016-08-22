@@ -1,4 +1,6 @@
-<?php include "nav.html";?>
+<?php include "nav.html";
+include "Pdo/testPdoBb.php";
+?>
 <div class="content">
 	<div class="lefter">
     	<div class="title">
@@ -6,7 +8,6 @@
         </div>
         <ul class="list_r" style="padding-right:40px">
             <?php
-include "Pdo/testPdoBb.php";
 $data = $test->query("select * from tp_information  order by id ");
 foreach ($data as $arr) {
     ;?>
@@ -22,4 +23,4 @@ foreach ($data as $arr) {
     <?php include "left.php";?>
 
 </div>
-<?php include "buttom,.html";?>
+<?php include "buttom.html";?>

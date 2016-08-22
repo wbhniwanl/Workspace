@@ -60,4 +60,4 @@ foreach ($data as $arr) {
 
 
 </div>
-<?php include "buttom,.html";?>
+<?php include "buttom.html";?>

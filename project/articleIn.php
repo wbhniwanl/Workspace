@@ -22,8 +22,7 @@ foreach ($data as $arr) {
 ;?>
 
     </div>
-
     <?php include "left.php";?>
 
 </div>
-<?php include "buttom,.html";?>
+<?php include "buttom.html";?>
