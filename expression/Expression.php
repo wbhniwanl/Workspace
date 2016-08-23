@@ -13,7 +13,8 @@ class Expression
      * @param $arr
      * @return array
      *以字母开头与数字结尾中间不含空格
-     *    */
+     *
+     */
     public function reExpression($arr)
     {
         foreach ($arr as $row) {
@@ -39,8 +40,8 @@ class Expression
     public function jieQu($arrTwo)
     {
         /**
-         *获取所有<a>标签中的地址
-         *         */
+         *获取所有<a>标签中的地
+         */
 /* foreach ($arrOne as $rwo) {
 if (preg_match_all('/^(http://)(\w+.)(\w+.)(\w+)/', $rwo, $shu)) {
 $str1[] = $shu[1];
@@ -72,7 +73,7 @@ $str1[] = $shu[1];
     {
         /**
          *通过替换的方式除掉所有html标签
-         *         */
+         */
         $delect = "/<\/?[^>]+>/";
         $arrOne = preg_replace($delect, '', $arrOne); //直接返回
         // $arrOne1 = $arrOne;
