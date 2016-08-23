@@ -6,17 +6,15 @@ namespace Ary\Workspece;
  * User: tanyunbao
  * Date: 2016/8/21
  * Time: 13:53
+ * 实现正则的基本操作
  */
 class Expression
 {
-    /**
-     * @param $arr
-     * @return array
-     *以字母开头与数字结尾中间不含空格
-     *
-     */
     public function reExpression($arr)
     {
+        /*
+         * 以字母开头与数字结尾中间不含空格
+         */
         foreach ($arr as $row) {
             if (preg_match('/^[a-zA-Z]\S*[0-9]$/', $row)) {
                 $str[] = $row;
@@ -27,7 +25,7 @@ class Expression
     }
     public function reExpressionHttp($row)
     {
-        /**
+        /*
          *获取http协议 主机名和域名和文件名
          */
         $one = '@^(http://)+(\w+.)(\w+.)(\w+.)(\w.*)@i';
@@ -39,7 +37,7 @@ class Expression
     }
     public function jieQu($arrTwo)
     {
-        /**
+        /*
          *获取所有<a>标签中的地
          */
 /* foreach ($arrOne as $rwo) {
@@ -48,6 +46,7 @@ $str1[] = $shu[1];
 }
 }*/
         /* $one = "/<a[\s\S]*?href=['']?([\w\.]*)['']?[\s\S]*?></a>/";*/
+        //第一种方法pre_match('@href=//\w+.\w+.\w+>@')
         preg_match_all('/<a\s.*?href=[\'|\"]([^\"\']*)[\'|\"][^>]*>/is', $arrTwo, $matched);
         //print_r($matched[1]);
         return $matched[1];
@@ -71,7 +70,7 @@ $str1[] = $shu[1];
     }
     public function delectHtml($arrOne)
     {
-        /**
+        /*
          *通过替换的方式除掉所有html标签
          */
         $delect = "/<\/?[^>]+>/";
