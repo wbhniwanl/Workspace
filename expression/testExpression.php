@@ -12,9 +12,8 @@ $row = "http://www.yaochufa.com/index.php";
 echo "<pre>";
 var_dump($test->reExpressionHttp($row));
 echo "<pre>";
-$arrTwo = "<tr><td><a href=\"http://qzone.qq.com\">QQ空间</a></td><td><a href=\"http://www.ganji.com\">赶 集 网</a></td><td>";
-
-var_dump($test->jieQu($arrTwo));
+$arr = "<tr><td><a href=\"http://qzone.qq.com\">QQ空间</a></td><td><a href=\"http://www.ganji.com\">赶 集 网</a></td><td>";
+var_dump($test->intercept($arr));
 echo "<pre>";
-$arrOne = "<tr><td><a href=”http://qzone.qq.com”>QQ空间</a></td><td><a href=\"http://www.ganji.com\">赶 集 网</a></td><td>";
-var_dump($test->delectHtml($arrOne));
+$arr = "<tr><td><a href=”http://qzone.qq.com”>QQ空间</a></td><td><a href=\"http://www.ganji.com\">赶 集 网</a></td><td>";
+var_dump($test->delectHtml($arr));

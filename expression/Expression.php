@@ -30,12 +30,12 @@ class Expression
          */
         $one = '@^(http://)+(\w+.)(\w+.)(\w+.)(\w.*)@i';
         //$one = '@^(http://)(\w+.)(\w+.\w+.)(\w.*)@i';
-        if (preg_match($one, $row, $shu)) {
-            $str1[] = $shu;
+        if (preg_match($one, $row, $date)) {
+            $str[] = $date;
         }
-        return $str1;
+        return $str;
     }
-    public function jieQu($arrTwo)
+    public function intercept($arrInter)
     {
         /*
          *获取所有<a>标签中的地
@@ -47,7 +47,7 @@ $str1[] = $shu[1];
 }*/
         /* $one = "/<a[\s\S]*?href=['']?([\w\.]*)['']?[\s\S]*?></a>/";*/
         //第一种方法pre_match('@href=//\w+.\w+.\w+>@')
-        preg_match_all('/<a\s.*?href=[\'|\"]([^\"\']*)[\'|\"][^>]*>/is', $arrTwo, $matched);
+        preg_match_all('/<a\s.*?href=[\'|\"]([^\"\']*)[\'|\"][^>]*>/is', $arrInter, $matched);
         //print_r($matched[1]);
         return $matched[1];
         /* var_dump($one);
@@ -68,14 +68,14 @@ $str1[] = $shu[1];
         //}
         // return $str1;
     }
-    public function delectHtml($arrOne)
+    public function delectHtml($arrDelect)
     {
         /*
          *通过替换的方式除掉所有html标签
          */
         $delect = "/<\/?[^>]+>/";
-        $arrOne = preg_replace($delect, '', $arrOne); //直接返回
+        $arr = preg_replace($delect, '', $arrDelect); //直接返回
         // $arrOne1 = $arrOne;
-        return $arrOne;
+        return $arr;
     }
 }
