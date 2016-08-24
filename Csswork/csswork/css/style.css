@@ -90,7 +90,7 @@ float: left;
     background: url(../images/contentbg.gif) repeat-x left top;
     text-align: left;
 }
-.wZuo{
+.leftInformation{
     width: 475px;
     float: left;
 }
@@ -104,7 +104,7 @@ float: left;
     position: absolute;
     top:6px;
 }
-.titlec{
+.titleStyle{
     float: left;
     width: 134px;
     background: url("../images/titlebg.gif") repeat-x left top;
@@ -115,31 +115,31 @@ float: left;
     height: 26px;
     padding: 0 6px;
 }
-.wZuocontent{
+.companyProfile{
     clear: left;
     padding:15px 0 0 -10px;
     color: black;
     font-size: 16px;
 }
-.blank10 {
+.blank {
     height: 10px;
     clear: both;
     display: block;
     font-size: 1px;
     overflow: hidden;
 }
-.tubian{
+.picture{
     padding-top:1px;
 
 }
-.tubian li .tubianimg{
+.picture li .pictureImg{
     width: 148px;
     height: 106px;
     display: block;
     border:1px solid #666666;
     margin-left: -40px;
 }
-.tubian li {
+.picture li {
     float: left;
    width: 148px;
     text-align: center;
@@ -149,7 +149,7 @@ float: left;
     float: right;
     width: 370px;
 }
-.rightzuo{
+.rightList{
    margin-left: -35px;
 }
 .right li{

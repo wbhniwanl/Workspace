@@ -46,33 +46,33 @@
     </a>
 </div>
     <div class="content">
-        <div class="wZuo">
+        <div class="leftInformation">
             <div class="title">
-                <h2 class="titlec">公司简介 About us</h2>
+                <h2 class="titleStyle">公司简介 About us</h2>
             </div>
-            <div class="wZuocontent">
+            <div class="companyProfile">
                    <span>万买卖点 大厦是的话就卡死的话 的开始的卡死的卡号打开撒娇的萨达打算打算打算打算的撒的的萨达撒阿斯顿阿斯顿阿斯顿阿斯顿阿打算 按时</span>
             </div>
-            <div class="blank10"></div>
+            <div class="blank"></div>
             <div class="title">
-                <h2 class="titlec">产品展示 Products</h2>
+                <h2 class="titleStyle">产品展示 Products</h2>
                 <span class="more">更多...</span>
             </div>
-            <ul class="tubian">
+            <ul class="picture">
                <li>
-              <span class="tubianimg">
+              <span class="pictureImg">
             <a href="#">
             <img src="images/prod2.gif">
             </a>
            </span>
           </li>  <li>
-                <span class="tubianimg">
+                <span class="pictureImg">
             <a>
             <img src="images/prod2.gif">
             </a>
            </span>
           </li>  <li>
-                <span class="tubianimg">
+                <span class="pictureImg">
             <a>
             <img src="images/prod2.gif">
             </a>
@@ -83,10 +83,10 @@
         </div>
         <div class="right">
             <div class="title">
-                <h2 class="titlec">最新公告 News</h2>
+                <h2 class="titleStyle">最新公告 News</h2>
                 <span class="more">更多...</span>
             </div>
-            <ul class="rightzuo">
+            <ul class="rightList">
                 <li>
                    <a href="#"> 11111111
                        <span>2016-8-23 12:00</span></a>
@@ -106,7 +106,7 @@
                 <span class="more">更多...</span>
 
             </div>
-            <ul class="rightzuo">
+            <ul class="rightList">
                 <li>
                     <a href="#"> 11111111
                     <span>2016-8-23 12:00</span>
