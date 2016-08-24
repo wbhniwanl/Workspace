@@ -64,29 +64,5 @@ echo '上传[文件' . $key . ']失败!<br/>';
 }
 print_r($_FILES);
 }*/
-
 }
-include "./Pdo/testPdoBb.php";
-if (isset($_POST['submit'])) {
-    if (!empty($_POST['username'])) {
-        if (!empty($_POST['pass'])) {
-            if ($_POST['pass'] == $_POST['pass1']) {
-                $username    = $_POST['username'];
-                $pass        = md5($_POST['pass']);
-                $radio       = $_POST['radio'];
-                $checkboxOne = $_POST['checkboxOne'];
-                $checkboxTwo = implode(',', $checkboxOne);
-                $city        = $_POST['city'];
-                $content     = $_POST['content'];
-                $upload1     = 'images/' . $_FILES['upload1']['name']; //获取他的文件的name数组的值
-                $arr         = array('username' => "$username", 'password' => "$pass", 'sex' => "$radio", 'hobby' => "$checkboxTwo", 'liveCity' => "$city", 'imagesSelf' => "$upload1", 'profile' => "$content");
-                $test->insert('tp_user', $arr);
-            }
-        }
-    }
-}
-header('Content-Type:text/html;charset=utf-8');
-$oneDemo = new FileUpload();
-$oneDemo->upLoad();
-
 //$oneDemo->upLoadmore();

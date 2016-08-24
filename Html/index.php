@@ -18,14 +18,14 @@
         <p><label>&nbsp;&nbsp;密码:</label>
         <input type="password" name="pass" placeholder="请输入密码" value=""></p>
         <p> <label>确认密码:</label>
-        <input type="password" name="pass1" placeholder="请再次输入密码" value=""></p>
+        <input type="password" name="passAgain" placeholder="请再次输入密码" value=""></p>
     </fieldset>
 </div>
  <div class="resiterbottom">
      <fieldset>
          <legend>基本信息</legend>
          <p><label>&nbsp;性别:</label>
-             <input type="radio" name="radio" value="男" checked="checked">男
+             <input type="radio" name="radio" value="男">男
              <input type="radio" name="radio" value="女">女
          </p>
          <p><label>&nbsp;爱好:</label>
@@ -59,36 +59,44 @@
 <script type="text/javascript">
 
     function check(form) {
+        //判断账号不为空
        if(form.username.value==""){
            alert("请输入账号");
            form.username.focus();
            return false;
        }
+        //判断密码不为空
         if(form.pass.value==""){
             alert("请输入密码");
             form.pass.focus();
             return false;
         }
-        if(form.pass.value!=form.pass1.value){
+        //判断两次密码要一致
+        if(form.pass.value!=form.passAgain.value){
             alert("两次密码不一致");
             form.pass1.focus();
             return false;
         }
+        //判断下拉框不为空
         if(form.city.value==""){
             alert("请选择城市");
             form.city.focus();
             return false;
         }
+        //判断图片不为空
         if(form.upload1.value==""){
             alert("请选择图片");
             form.upload1.focus();
             return false;
         }
+        //判断文本不为空
         if(form.content.value==""){
             alert("请输入个人简介");
             form.content.focus();
             return false;
         }
+
+
         return true;
     }
 </script>
