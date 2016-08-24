@@ -1,0 +1,75 @@
+*{margin: 0px;
+padding: 0px;}
+
+.resiter{
+    height: 580px;
+    width: 650px;
+    margin: auto;
+    margin-top: 150px;
+
+}
+.resitertop{
+    height: 180px;
+    width: 650px;
+
+}
+.resiterbottom{
+    height: 330px;
+    width: 650px;
+}
+.resiter fieldset{
+}
+.resiter fieldset legend{
+    color: #0099CC;
+    margin-left: 50px;
+    font-size: 24px;
+}
+.resiter .resitertop fieldset{
+   height: 150px;
+    width: 550px;
+    margin-left: 46px;
+    margin-top: 15px;
+}
+.resiter .resitertop label{
+    margin-left: 35px;
+ }
+.resiter .resitertop input{
+    margin-left: 20px;
+    width: 250px;
+    height: 18px;
+    margin-top: 14px;
+}
+.resiter .resitertop fieldset legend{
+    color: #0099CC;
+    margin-left: 75px;
+    font-size: 20px;
+}
+.resiter .resiterbottom fieldset{
+    height: 310px;
+    width: 550px;
+    margin-left: 46px;
+    margin-top: -15px;
+
+}
+.resiter .resiterbottom label{
+    margin-left: 53px;
+}
+.resiter .resiterbottom input{
+    margin-left: 10px;
+    height: 15px;
+    margin-top: 5px;
+}
+.resiter .resiterbottom select{
+    margin-left: 10px;
+    height: 20px;
+    margin-top: 5px;
+}
+.resiter .resiterbottom textarea{
+    margin-left: 125px;
+    margin-top:-15px;
+}
+.resiter .resiterbottom fieldset legend{
+     color: #0099CC;
+     margin-left: 75px;
+     font-size: 20px;
+ }
