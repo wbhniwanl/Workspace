@@ -1,5 +1,5 @@
 <?php
-include "nav.html";
+include "public/nav.html";
 include "Pdo/testPdoBb.php"
 ;?>
 <div class="content">
@@ -22,6 +22,6 @@ $test->insert('tp_message', $arr);
         </div>
 
     </div>
-    <?php include "left.php";?>
+    <?php include "public/left.php";?>
 </div>
-<?php include "buttom.html";?>
+<?php include "public/buttom.html";?>

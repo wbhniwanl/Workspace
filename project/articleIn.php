@@ -1,4 +1,5 @@
-<?php include "nav.html";?>
+<?php include "public/nav.html";?>
+
 <div class="content">
 	<div class="lefter">
     	<div class="title">
@@ -22,7 +23,7 @@ foreach ($data as $arr) {
 ;?>
 
     </div>
-    <?php include "left.php";?>
+    <?php include "public/left.php";?>
 
 </div>
-<?php include "buttom.html";?>
+<?php include "public/buttom.html";?>

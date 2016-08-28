@@ -1,5 +1,5 @@
 <?php
-include "nav.html";
+include "public/nav.html";
 include "Pdo/testPdoBb.php";
 ?>
 <div class="content">
@@ -39,9 +39,6 @@ foreach ($data as $arr) {
             </li>
             <?php }
 ;?>
-
-
-
         </ul>
     </div>
     <div class="w370_r">
@@ -96,4 +93,4 @@ foreach ($data as $arr) {
 ?>
 </div>
 
-<?php include "buttom.html";?>
+<?php include "public/buttom.html";?>
