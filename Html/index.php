@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="ajax.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <div class="resiter">
-    <form action="fileUpload.php" enctype="multipart/form-data" method="post" onsubmit="return check(this)">
+    <form action="dataOperation.php" enctype="multipart/form-data" method="post" onsubmit="return check(this)" name="form1">
     <fieldset>
 <legend>用户注册信息</legend>
 <div class="resitertop">
     <fieldset>
         <legend>重要信息</legend>
         <p><label>&nbsp;用户名:</label>
-        <input type="text" name="username" placeholder="请输入账号" value=""></p>
+        <input type="text" name="username" id="username" placeholder="请输入账号" value="" onblur="funtest()"></p>
+        <br/>
+        <p><span id="test100"></span></p>
         <p><label>&nbsp;&nbsp;密码:</label>
         <input type="password" name="pass" placeholder="请输入密码" value=""></p>
         <p> <label>确认密码:</label>
@@ -56,49 +60,5 @@
 
     </form>
 </div>
-<script type="text/javascript">
-
-    function check(form) {
-        //判断账号不为空
-       if(form.username.value==""){
-           alert("请输入账号");
-           form.username.focus();
-           return false;
-       }
-        //判断密码不为空
-        if(form.pass.value==""){
-            alert("请输入密码");
-            form.pass.focus();
-            return false;
-        }
-        //判断两次密码要一致
-        if(form.pass.value!=form.passAgain.value){
-            alert("两次密码不一致");
-            form.pass1.focus();
-            return false;
-        }
-        //判断下拉框不为空
-        if(form.city.value==""){
-            alert("请选择城市");
-            form.city.focus();
-            return false;
-        }
-        //判断图片不为空
-        if(form.upload1.value==""){
-            alert("请选择图片");
-            form.upload1.focus();
-            return false;
-        }
-        //判断文本不为空
-        if(form.content.value==""){
-            alert("请输入个人简介");
-            form.content.focus();
-            return false;
-        }
-
-
-        return true;
-    }
-</script>
 </body>
 </html>

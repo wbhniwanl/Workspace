@@ -35,9 +35,7 @@ $data = $test->query("select * from tp_conpany where id=1;");
     ;?>
 		<?php }
 ?>
+
     </div>
-
 <?php include "public/left.php";?>
-
-	</div>
 <?php include "public/buttom.html";?>

@@ -29,7 +29,7 @@ $data = $test->query("select * from tp_produce order by id;");
         ;?>
     <li>
                 <span class="listimg">
-                    <a href=<?php echo "product_info.php?productName=" . $arr['id']; ?>><img src="<?php echo "admin/" . $arr['productImage']; ?>" alt="图片" /></a>
+                    <a href=<?php echo "productInfo.php?productName=" . $arr['id']; ?>><img src="<?php echo "admin/" . $arr['productImage']; ?>" alt="图片" /></a>
                 </span>
         <span class="listtxt"><a href="productInfo.php"><?php echo $arr['name']; ?>  </a></span>
     </li>
@@ -49,7 +49,7 @@ $data = $test->query(" select * from tp_produce join tp_typeProduct on (tp_produ
 foreach ($data as $arr) {
     ;?>
 
-            	<li><a href=<?php echo "product_list.php?productName1=" . $arr['type']; ?>><?php echo $arr['type']; ?></a></li>
+            	<li><a href=<?php echo "productList.php?productName1=" . $arr['type']; ?>><?php echo $arr['type']; ?></a></li>
 
                 <?php }
 ;?>

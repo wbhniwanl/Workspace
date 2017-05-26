@@ -11,7 +11,9 @@ if (isset($_POST['submit'])) {
     if (!empty($_POST['username'])) {
         if (!empty($_POST['pass'])) {
             if ($_POST['pass'] == $_POST['passAgain']) {
-                $username    = $_POST['username'];
+                $username = $_POST['username'];
+                //$usernameStr = preg_match('/\s+./', $username, $arrDate);
+                //var_dump($usernameStr);
                 $pass        = md5($_POST['pass']);
                 $radio       = $_POST['radio'];
                 $checkboxOne = $_POST['checkboxOne'];
